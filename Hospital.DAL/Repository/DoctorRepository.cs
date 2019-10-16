@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hospital.DAL
+namespace Hospital.DAL.Repository
 {
-    public class Class1
+    class DoctorRepository
     {
     }
 }
