@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Hospital.DAL.Repository
 {
-    public class AssignmentRepository : IBaseRepository<Assignment>, IAssignmentRepository
+    public class AssignmentRepository : BaseRepository<Assignment>, IAssignmentRepository
     {
-        public AssignmentRepository()
+        public AssignmentRepository(HospitalContext context) : base(context)
         {
         }
     }

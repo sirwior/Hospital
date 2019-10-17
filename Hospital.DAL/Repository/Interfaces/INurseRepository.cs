@@ -9,5 +9,6 @@ namespace Hospital.DAL.Repository.Interfaces
 {
     public interface INurseRepository : IBaseRepository<Nurse>
     {
+        List<Nurse> GetNursesSortedByName();
     }
 }
