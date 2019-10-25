@@ -11,6 +11,7 @@ namespace Hospital.DAL.Repository.Interfaces
     {
         void DiagnosePatient(int id, string diagnose);
         void AddAssignment(int id, Assignment assignment);
+        void AddDoctor(int patId, int docId);
 
     }
 }

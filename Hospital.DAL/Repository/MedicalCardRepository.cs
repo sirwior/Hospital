@@ -27,6 +27,15 @@ namespace Hospital.DAL.Repository
             _context.SaveChanges();
         }
 
+        public void AddDoctor(int patId, int docId)
+        {
+            var medCard = _context.MedicalCards
+                          .Where(m => m.Id == patId)
+                          .FirstOrDefault();
+            medCard.DoctorId = docId;
+            _context.SaveChanges();
+        }
+
         public void DiagnosePatient(int id, string diagnose)
         {
             var medCard = _context.MedicalCards

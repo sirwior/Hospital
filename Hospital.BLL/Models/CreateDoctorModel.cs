@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Hospital.BLL.Models
 {
-    public class DiagnoseToPatientModel
+    public class CreateDoctorModel
     {
-        public string Diagnose { get; set; }
+
     }
 }

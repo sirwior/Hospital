@@ -34,6 +34,9 @@
     <Reference Include="AutoMapper, Version=9.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
       <HintPath>..\packages\AutoMapper.9.0.0\lib\net461\AutoMapper.dll</HintPath>
     </Reference>
+    <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,14 +47,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\DischargePatientModel.cs" />
+    <Compile Include="Infrastructure\ServiceModule.cs" />
+    <Compile Include="Models\CreateNurseModel.cs" />
+    <Compile Include="Models\GetAllDoctorsModel.cs" />
+    <Compile Include="Models\GetAllNursesModel.cs" />
     <Compile Include="Services\AdminService.cs" />
     <Compile Include="Services\DoctorService.cs" />
-    <Compile Include="Models\AdminDoctorBLModel.cs" />
-    <Compile Include="Models\AdminPatientBLModel.cs" />
-    <Compile Include="Models\DiagnoseToPatientModel.cs" />
+    <Compile Include="Models\CreateDoctorModel.cs" />
+    <Compile Include="Models\CreatePatientModel.cs" />
     <Compile Include="Models\CreateAssignmentModel.cs" />
     <Compile Include="Models\GetAllPatientsModel.cs" />
+    <Compile Include="Services\Interfaces\IAdminService.cs" />
     <Compile Include="Services\Interfaces\IDoctorService.cs" />
     <Compile Include="Services\NurseService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -12,6 +12,6 @@ namespace Hospital.DAL.Repository.Interfaces
         
         List<Patient> GetPatientsSortedByName();
         List<Patient> GetPatientsSortedByBirthDate();
-        void DischargePatient(int cardId);
+        void DischargePatient(int patId);
     }
 }

@@ -13,7 +13,7 @@ namespace Hospital.BLL.Services
 {
     public class DoctorService : IDoctorService
     {
-        private readonly IUnitOfWork _unitOfWork;
+        private IUnitOfWork _unitOfWork { get; set; }
 
         public DoctorService(IUnitOfWork unitOfWork)
         {

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Hospital.BLL.Models
 {
-    public class DischargePatientModel
+    public class CreatePatientModel
     {
-        public bool Discharged { get; set; }
+        //поля аналогичные пациенту из бд
     }
 }

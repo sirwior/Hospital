@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace Hospital.WEB.Controllers
 {
-    public class NurseController : Controller
+    public class AdminController : Controller
     {
-        
+        // GET: Admin
         public ActionResult Index()
         {
             return View();
