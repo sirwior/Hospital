@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=9.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.9.0.0\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,7 +44,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\DischargePatientModel.cs" />
+    <Compile Include="Services\AdminService.cs" />
+    <Compile Include="Services\DoctorService.cs" />
+    <Compile Include="Models\AdminDoctorBLModel.cs" />
+    <Compile Include="Models\AdminPatientBLModel.cs" />
+    <Compile Include="Models\DiagnoseToPatientModel.cs" />
+    <Compile Include="Models\CreateAssignmentModel.cs" />
+    <Compile Include="Models\GetAllPatientsModel.cs" />
+    <Compile Include="Services\Interfaces\IDoctorService.cs" />
+    <Compile Include="Services\NurseService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hospital.DAL\Hospital.DAL.csproj">
+      <Project>{74993DC3-26B5-4D68-9FE0-3AC04031F247}</Project>
+      <Name>Hospital.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

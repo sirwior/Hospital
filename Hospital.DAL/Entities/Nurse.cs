@@ -10,5 +10,10 @@ namespace Hospital.DAL.Entities
     {
         public string Name { get; set; }
         public string Surname { get; set; }
+
+        public string ApplicationUserId { get; set; }
+        public virtual ApplicationUser ApplicationUser { get; set; }
+
+        public virtual List<Assignment> Assignments { get; set; }
     }
 }

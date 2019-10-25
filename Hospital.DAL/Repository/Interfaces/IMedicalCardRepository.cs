@@ -9,5 +9,8 @@ namespace Hospital.DAL.Repository.Interfaces
 {
     public interface IMedicalCardRepository : IBaseRepository<MedicalCard>
     {
+        void DiagnosePatient(int id, string diagnose);
+        void AddAssignment(int id, Assignment assignment);
+
     }
 }

@@ -10,6 +10,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Hospital.WEB.Models;
 
+
 namespace Hospital.WEB.Controllers
 {
     [Authorize]

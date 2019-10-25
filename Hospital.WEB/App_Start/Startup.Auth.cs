@@ -7,6 +7,7 @@ using Microsoft.Owin.Security.Google;
 using Owin;
 using Hospital.WEB.Models;
 
+
 namespace Hospital.WEB
 {
     public partial class Startup

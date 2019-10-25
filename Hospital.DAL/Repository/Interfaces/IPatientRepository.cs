@@ -9,7 +9,9 @@ namespace Hospital.DAL.Repository.Interfaces
 {
     public interface IPatientRepository : IBaseRepository<Patient>
     {
+        
         List<Patient> GetPatientsSortedByName();
         List<Patient> GetPatientsSortedByBirthDate();
+        void DischargePatient(int cardId);
     }
 }

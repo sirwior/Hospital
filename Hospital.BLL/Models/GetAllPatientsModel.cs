@@ -4,15 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hospital.DAL.Entities
+namespace Hospital.BLL.Models
 {
-    public class Patient : BaseEntity
+    public class GetAllPatientsModel
     {
-        public bool Discharged { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public DateTime BirthDate { get; set; }
-
-        public virtual MedicalCard MedicalCard { get; set; }
+        public int MedicalCardId { get; set; }
     }
 }

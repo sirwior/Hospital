@@ -1,4 +1,5 @@
-﻿using Hospital.DAL.Entities;
+﻿using Hospital.DAL.EF;
+using Hospital.DAL.Entities;
 using Hospital.DAL.Repository.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -23,5 +24,7 @@ namespace Hospital.DAL.Repository
                         select nurse).ToList();
             return list;
         }
+
+       
     }
 }

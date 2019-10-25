@@ -12,6 +12,7 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using Hospital.WEB.Models;
 
+
 namespace Hospital.WEB
 {
     public class EmailService : IIdentityMessageService
